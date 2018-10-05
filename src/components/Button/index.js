@@ -1,29 +1,22 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-
-const style = {
-  border: '1px solid #eee',
-  borderRadius: 3,
-  backgroundColor: '#FFFFFF',
-  cursor: 'pointer',
-  fontSize: 15,
-  padding: '3px 10px',
-  margin: 10
-}
+import './button.css'
 
 class Button extends React.Component {
-  handleClick = () => {
+  handleClick = (e) => {
+    e.preventDefault()
     this.props.onClick(this.props.onClick)
   }
   render () {
     return (
-      <button style={style} onClick={this.handleClick}>{this.props.children}</button>
+      <a href="#" onClick={this.handleClick} className={`btn ${this.props.style}`}>{this.props.children}</a>
     )
   }
 }
 
 Button.propTypes = {
   children: PropTypes.node.isRequired,
+  style: PropTypes.string,
   onClick: PropTypes.func
 }
 

@@ -69,6 +69,14 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "@babel/plugin-syntax-json-strings": "^7.0.0",
+    "@babel/plugin-syntax-jsx": "^7.0.0",
+    "@babel/plugin-syntax-optional-catch-binding": "^7.0.0",
+    "@babel/plugin-transform-modules-umd": "^7.1.0",
+    "@babel/plugin-transform-react-jsx-self": "^7.0.0",
+    "@babel/plugin-transform-react-jsx-source": "^7.0.0",
+    "@babel/plugin-transform-shorthand-properties": "^7.0.0",
+    "@babel/plugin-transform-typeof-symbol": "^7.0.0",
     "@storybook/addon-actions": "^4.0.0-alpha.23",
     "@storybook/addon-links": "^4.0.0-alpha.23",
     "@storybook/addons": "^4.0.0-alpha.23",

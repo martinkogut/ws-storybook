@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import './card.scss'
+import Button from '../../atoms/Button/index'
+//import './card.scss'
 
 class Card extends React.Component {
   handleClick = (e) => {
@@ -28,7 +29,7 @@ class Card extends React.Component {
             <h4>Blog Post Title</h4>
           </a>
           <p>Lorem ipsum dolor sit amet, tempor consectetur adipisicing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua. Ut enim ad ...</p>
-          <a href="pages/blog/blog-post.html" className="btn btn-small">Read More</a>
+          <Button to={"pages/blog/blog-post.html"} style="btn-small" children={'Read more'} />
         </div>
       </div>
     )

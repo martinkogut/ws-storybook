@@ -4,12 +4,12 @@ import './button.css'
 
 class Button extends React.Component {
   handleClick = (e) => {
-    e.preventDefault()
+    // e.preventDefault()
     this.props.onClick(this.props.onClick)
   }
   render () {
     return (
-      <a href="#" onClick={this.handleClick} className={`btn ${this.props.style}`}>{this.props.children}</a>
+      <a href={this.props.to} onClick={this.handleClick} className={`btn ${this.props.style}`}>{this.props.children}</a>
     )
   }
 }
@@ -17,6 +17,7 @@ class Button extends React.Component {
 Button.propTypes = {
   children: PropTypes.node.isRequired,
   style: PropTypes.string,
+  location: PropTypes.string,
   onClick: PropTypes.func
 }
 

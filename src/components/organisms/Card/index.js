@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import './card.css'
+import './card.scss'
 
 class Card extends React.Component {
   handleClick = (e) => {

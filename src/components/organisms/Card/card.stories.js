@@ -4,6 +4,7 @@ import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 import { linkTo } from '@storybook/addon-links'
 
-import { Welcome } from '@storybook/react/demo'
+import Card from './index'
 
-storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />);
+storiesOf('Organsims/Card', module)
+  .add('Card', () => <Card onClick={action('clicked')}>Ghost Button</Card>)

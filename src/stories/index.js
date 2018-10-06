@@ -1,11 +1,12 @@
-import React from 'react';
+import React from 'react'
 
-import { storiesOf } from '@storybook/react';
-import { action } from '@storybook/addon-actions';
-import { linkTo } from '@storybook/addon-links';
+import { storiesOf } from '@storybook/react'
+import { action } from '@storybook/addon-actions'
+import { linkTo } from '@storybook/addon-links'
 
-import { Welcome } from '@storybook/react/demo';
-import Button from '../components/Button'
+import { Welcome } from '@storybook/react/demo'
+import Button from '../components/atoms/Button'
+import Card from '../components/organisms/Card'
 
 storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />);
 
@@ -17,3 +18,6 @@ storiesOf('Button', module)
   .add('Button Large', () => <Button style="btn-large" onClick={action('clicked')}>Ghost Button</Button>)
   .add('Button Small', () => <Button style="btn-small" onClick={action('clicked')}>Ghost Button</Button>)
   .add('Button Light', () => <Button style="btn-light" onClick={action('clicked')}>Ghost Button</Button>)
+
+storiesOf('Card', module)
+  .add('Card', () => <Card onClick={action('clicked')}>Ghost Button</Card>)

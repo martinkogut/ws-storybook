@@ -10,7 +10,7 @@ import Card from '../components/organisms/Card'
 
 storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />);
 
-storiesOf('Button', module)
+storiesOf('Atoms/Button', module)
   .add('Ghost Button', () => <Button style="btn-ghost-light" onClick={action('clicked')}>Ghost Button</Button>)
   .add('Round Button', () => <Button style="btn-round" onClick={action('clicked')}>Ghost Button</Button>)
   .add('Text Button', () => <Button style="btn-text" onClick={action('clicked')}>Ghost Button</Button>)

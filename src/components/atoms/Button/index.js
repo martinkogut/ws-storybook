@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import './button.css'
+import '../../../assets/scss/base.scss'
 
 class Button extends React.Component {
   handleClick = (e) => {

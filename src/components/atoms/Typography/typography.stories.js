@@ -4,6 +4,7 @@ import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 import { linkTo } from '@storybook/addon-links'
 
-import { Welcome } from '@storybook/react/demo'
+import '../../../assets/scss/base.scss'
 
-storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />);
+storiesOf('Atoms/Typography', module)
+.add('h1', () => <h2>What we do</h2>)

@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import Button from '../../atoms/Button/index'
 //import './card.scss'
+import style from './card.module.css'
 
 class Card extends React.Component {
   handleClick = (e) => {
@@ -10,7 +11,7 @@ class Card extends React.Component {
   }
   render() {
     return (
-      <div className="blog-post wow fadeIn" data-wow-duration="2s" data-wow-delay=".6s" style={{visibility: 'visible', animationDuration: '2s', animationDelay: '0.6s', animationName: 'fadeIn'}}>
+      <div className={'blog-post'} data-wow-duration="2s" data-wow-delay=".6s" style={{visibility: 'visible', animationDuration: '2s', animationDelay: '0.6s', animationName: 'fadeIn'}}>
         <a href="pages/blog/blog-post.html" className="post-img">
           <img src="assets/images/blog-post-img-1.6.jpg" alt="Blog Post 1" />
         </a>

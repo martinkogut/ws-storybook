@@ -1,43 +1,41 @@
 /* --------------------------------------------------
 	18.0 Blog
 -------------------------------------------------- */
-
 .blog-pagination .pagination {
   margin: 0;
-  li a {
-    border: none;
-    background: none;
-    color: #999;
-    font-size: 1.2em;
-    &:hover {
-      border: none;
-      color: #111;
-    }
-  }
+}
+.blog-pagination .pagination li a {
+  border: none;
+  background: none;
+  color: #999;
+  font-size: 1.2em;
+}
+.blog-pagination .pagination li a:hover {
+  border: none;
+  color: #111;
 }
 
 .blog-post-nav {
   padding-top: 100px;
   padding-bottom: 50px;
-  .prev-btn, .next-btn {
-    display: inline-block;
-    color: #999;
-  }
-  .prev-btn:hover, .next-btn:hover {
-    color: #111;
-  }
-  .prev-btn {
-    float: left;
-    padding-left: 15px;
-  }
-  .next-btn {
-    float: right;
-    padding-right: 15px;
-  }
+}
+.blog-post-nav .prev-btn, .blog-post-nav .next-btn {
+  display: inline-block;
+  color: #999;
+}
+.blog-post-nav .prev-btn:hover, .blog-post-nav .next-btn:hover {
+  color: #111;
+}
+.blog-post-nav .prev-btn {
+  float: left;
+  padding-left: 15px;
+}
+.blog-post-nav .next-btn {
+  float: right;
+  padding-right: 15px;
 }
 
 /* ---- 18.1 Blog Columns ---- */
-
 .blog-columns .blog-post, .blog-classic .blog-post {
   border-top: 1px solid #f8f8f8;
   background: #f8f8f8;
@@ -65,7 +63,7 @@
 }
 
 .blog-columns .blog-post .post-img:hover img, .blog-classic .blog-post .post-img:hover img {
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .blog-columns .blog-post .bp-content, .blog-classic .blog-post .bp-content {
@@ -87,7 +85,7 @@
   padding-left: 10px;
   border-left: 1px solid #ececec;
   font-family: "Open Sans", "Montserrat", "Helvetica Neue", Helvetica, sans-serif;
-  font-size: .75em;
+  font-size: 0.75em;
   letter-spacing: 2px;
   text-transform: uppercase;
   vertical-align: middle;
@@ -123,76 +121,67 @@
 }
 
 /* ---- 18.2 Blog Masonry ---- */
-
 .blog-masonry .blog-post {
   margin-bottom: 30px;
 }
 
 /* ---- 18.3 Blog Classic ---- */
-
 .blog-classic .blog-post {
   margin-bottom: 100px;
 }
 
 /* ---- 18.4 Blog Post Single ---- */
-
 .blog-post-single {
   margin-bottom: 100px;
-  .post-img {
-    margin-bottom: 20px;
-  }
-  .post-meta {
-    .post-date i, .post-comments i {
-      display: inline-block;
-      padding-right: 9px;
-      font-size: 18px;
-      vertical-align: middle;
-      color: #ccc;
-      -webkit-transition: color 0.3s;
-      transition: color 0.3s;
-    }
-    .post-date span, .post-comments span {
-      display: inline-block;
-      padding-left: 10px;
-      border-left: 1px solid #ececec;
-      font-family: "Open Sans", "Montserrat", "Helvetica Neue", Helvetica, sans-serif;
-      font-size: .75em;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      vertical-align: middle;
-      color: #999;
-      -webkit-transition: color 0.3s;
-      transition: color 0.3s;
-    }
-    .post-date:hover {
-      i, span {
-        color: #111;
-      }
-    }
-    .post-comments {
-      &:hover {
-        i, span {
-          color: #111;
-        }
-      }
-      float: right;
-    }
-  }
-  .post-title {
-    margin: 0;
-    padding-top: 30px;
-  }
-  .blog-post-content {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    p {
-      margin-bottom: 0;
-    }
-    .left-blog-quote {
-      margin: 20px 30px 20px -50px;
-    }
-    .right-blog-quote {
-      margin: 20px -50px 20px 30px;
-    }
-  }
+}
+.blog-post-single .post-img {
+  margin-bottom: 20px;
+}
+.blog-post-single .post-meta .post-date i, .blog-post-single .post-meta .post-comments i {
+  display: inline-block;
+  padding-right: 9px;
+  font-size: 18px;
+  vertical-align: middle;
+  color: #ccc;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+.blog-post-single .post-meta .post-date span, .blog-post-single .post-meta .post-comments span {
+  display: inline-block;
+  padding-left: 10px;
+  border-left: 1px solid #ececec;
+  font-family: "Open Sans", "Montserrat", "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 0.75em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  vertical-align: middle;
+  color: #999;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+.blog-post-single .post-meta .post-date:hover i, .blog-post-single .post-meta .post-date:hover span {
+  color: #111;
+}
+.blog-post-single .post-meta .post-comments {
+  float: right;
+}
+.blog-post-single .post-meta .post-comments:hover i, .blog-post-single .post-meta .post-comments:hover span {
+  color: #111;
+}
+.blog-post-single .post-title {
+  margin: 0;
+  padding-top: 30px;
+}
+.blog-post-single .blog-post-content {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.blog-post-single .blog-post-content p {
+  margin-bottom: 0;
+}
+.blog-post-single .blog-post-content .left-blog-quote {
+  margin: 20px 30px 20px -50px;
+}
+.blog-post-single .blog-post-content .right-blog-quote {
+  margin: 20px -50px 20px 30px;
 }

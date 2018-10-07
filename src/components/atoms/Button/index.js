@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import '../../../assets/scss/base.scss'
+import styles from './button.module.css'
 
 class Button extends React.Component {
   handleClick = (e) => {
@@ -9,7 +9,7 @@ class Button extends React.Component {
   }
   render () {
     return (
-      <a href={this.props.to} onClick={this.handleClick} className={`btn ${this.props.style}`}>{this.props.children}</a>
+      <a href={this.props.to} onClick={this.handleClick} className={styles.btn + ' ' + styles[this.props.style]}>{this.props.children}</a>
     )
   }
 }

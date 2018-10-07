@@ -7,4 +7,4 @@ import { linkTo } from '@storybook/addon-links'
 import CallToAction from './index'
 
 storiesOf('Organisms/Call to Action', module)
-  .add('Call to Action', () => <CallToAction></CallToAction>)
+  .add('Call to Action', () => <CallToAction dark></CallToAction>)

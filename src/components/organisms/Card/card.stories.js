@@ -6,5 +6,5 @@ import { linkTo } from '@storybook/addon-links'
 
 import Card from './index'
 
-storiesOf('Organsims/Card', module)
+storiesOf('Organisms/Card', module)
   .add('Card', () => <Card onClick={action('clicked')}>Ghost Button</Card>)

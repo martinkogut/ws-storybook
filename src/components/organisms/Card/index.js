@@ -11,28 +11,20 @@ class Card extends React.Component {
   }
   render() {
     return (
-      <div className={'blog-post'} data-wow-duration="2s" data-wow-delay=".6s" style={{visibility: 'visible', animationDuration: '2s', animationDelay: '0.6s', animationName: 'fadeIn'}}>
-        <a href="pages/blog/blog-post.html" className="post-img">
-          <img src="assets/images/blog-post-img-1.6.jpg" alt="Blog Post 1" />
-        </a>
-        <div className="bp-content">
-          <div className="post-meta">
-            <a href="#" className="post-date">
-              <i className="fa fa-calendar-o"></i>
-              <span>August 01.2015</span>
-            </a>
-            <a href="#" className="post-comments">
-              <i className="fa fa-comments-o"></i>
-              <span>12</span>
-            </a>
-          </div>
-          <a href="pages/blog/blog-post.html" className="post-title">
-            <h4>Blog Post Title</h4>
-          </a>
-          <p>Lorem ipsum dolor sit amet, tempor consectetur adipisicing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua. Ut enim ad ...</p>
-          <Button to={"pages/blog/blog-post.html"} style="btn-small" children={'Read more'} />
+      <div className="col-lg-4 col-md-6 col-sm-6 ws-s clients-layout">
+        <div className="client-item"></div>
+          <a href="#"
+            ><img class="img-responsive" src="//placehold.it/680x400" alt="Client" /></a>
+          <div class="item-content">
+              <h>
+                  <div class="field field--name-title field--type-string field--label-hidden field--item">Card 1</div>
+            </h>
+            <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic incidunt voluptatem, expedita quae eveniet.
+            </p>
+
         </div>
-      </div>
+  </div>
     )
   }
 }

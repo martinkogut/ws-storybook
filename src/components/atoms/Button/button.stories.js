@@ -4,10 +4,12 @@ import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 import { linkTo } from '@storybook/addon-links'
 
+import DarkBackground from '../../../decorators/DarkBackground'
+
 import Button from './index'
 
 storiesOf('Atoms/Button', module)
-  .add('Ghost Button', () => <Button ghost onClick={action('clicked')}>Ghost Button</Button>)
+  .add('Ghost Button', () => <DarkBackground><Button ghost onClick={action('clicked')}>Ghost Button</Button></DarkBackground>)
   .add('Round Button', () => <Button round onClick={action('clicked')}>Ghost Button</Button>)
   .add('Text Button', () => <Button text onClick={action('clicked')}>Ghost Button</Button>)
   .add('Text Button Light', () => <Button textLight onClick={action('clicked')}>Ghost Button</Button>)

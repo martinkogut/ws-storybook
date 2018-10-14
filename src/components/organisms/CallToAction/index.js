@@ -16,12 +16,8 @@ class CTA extends React.Component {
       <div className={ctaStyles}>
         <div className={styles['bg-overlay']}>
           <div className={styles['cta-wrapper']}>
-          <h3 class="h-alt wow fadeIn">See what we can do for you</h3>
+          <Typography heading="h3" children="See what we can do for you"></Typography>
             <Button light large>Get in touch</Button>
-            {/*
-            <h3 class="h-alt wow fadeIn" data-wow-delay=".1s" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.1s; animation-name: fadeIn;">See what we can do for you</h3>
-            <a href="#contact" class="btn btn-light btn-large wow fadeIn" data-wow-delay=".3s" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeIn;">Get in touch</a>
-            */}
           </div>
         </div>
       </div>

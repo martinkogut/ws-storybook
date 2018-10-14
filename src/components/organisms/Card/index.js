@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import classNames from 'classnames'
 import Button from '../../atoms/Button/index'
-//import './card.scss'
-import style from './card.module.css'
+import styles from './card.module.scss'
+console.log(styles)
+const cx = classNames.bind(styles)
 
 class Card extends React.Component {
   handleClick = (e) => {
@@ -11,20 +13,18 @@ class Card extends React.Component {
   }
   render() {
     return (
-      <div className="col-lg-4 col-md-6 col-sm-6 ws-s clients-layout">
-        <div className="client-item"></div>
-          <a href="#"
-            ><img class="img-responsive" src="//placehold.it/680x400" alt="Client" /></a>
-          <div class="item-content">
-              <h>
-                  <div class="field field--name-title field--type-string field--label-hidden field--item">Card 1</div>
-            </h>
-            <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic incidunt voluptatem, expedita quae eveniet.
-            </p>
-
-        </div>
-  </div>
+      <div className={styles['testimonials-3col']}>
+      <div className={styles['t-item']}>
+        <img src="../../assets/images/avatar-1.png" alt="Testimonial" />
+        <blockquote>
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae</p>
+          <footer>
+            <cite>by Julian Schmitz<span>Google</span></cite>
+          </footer>
+        </blockquote>
+        <span className={cx({'et-quote': true, 't-icon': true})} className="et-quote t-icon"></span>
+      </div>
+      </div>
     )
   }
 }

@@ -6,7 +6,7 @@
 
 /* ---- 12.1 Testimonial - 1 Column Slider ---- */
 .testimonials-parallax {
-	background: url(../../assets/images/sea-2.jpg);
+	background: url(../../../assets/images/sea-2.jpg);
 	background-size: cover;
 	background-position: 50%;
 	background-attachment: fixed;
@@ -121,11 +121,11 @@
 			padding-left: 35px;
 			padding-right: 35px;
 		}
-	} // .t-clients
-} // .testimonials-parallax
+	}
+}
 
 .testimonials-bg-2 {
-	background: url(../../assets/images/testimonials-bg-2.jpg);
+	background: url(../../../assets/images/testimonials-bg-2.jpg);
 	background-size: cover;
 	background-position: 50%;
 	background-attachment: fixed;
@@ -165,7 +165,7 @@
 		}
 
 		blockquote {
-			@extend body;
+			/* @extend body; */
 			color: $gray-light;
 
 			p {
@@ -237,7 +237,7 @@
 
 /* ---- 12.3 Clients List ---- */
 .clients-list-parallax {
-	background: url(../../assets/images/street.jpg);
+	background: url(../../../assets/images/street.jpg);
 	background-size: cover;
 	background-attachment: fixed;
 
@@ -358,4 +358,4 @@
 			margin-right: -35px;
 		}
 	}
-} // .clients-list-gray
+}

@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import classNames from 'classnames'
 import Button from '../../atoms/Button/index'
 import styles from './card.module.scss'
-console.log(styles)
 const cx = classNames.bind(styles)
 
 class Card extends React.Component {

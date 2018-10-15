@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@babel/core": "7.1.0",
+    "@storybook/addon-knobs": "^3.4.11",
     "@svgr/webpack": "2.4.1",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "9.0.0",
@@ -81,7 +82,10 @@
     "@babel/plugin-transform-shorthand-properties": "^7.0.0",
     "@babel/plugin-transform-typeof-symbol": "^7.0.0",
     "@storybook/addon-actions": "^4.0.0-alpha.23",
+    "@storybook/addon-info": "^3.4.11",
     "@storybook/addon-links": "^4.0.0-alpha.23",
+    "@storybook/addon-notes": "^3.4.11",
+    "@storybook/addon-viewport": "^3.4.11",
     "@storybook/addons": "^4.0.0-alpha.23",
     "@storybook/react": "^4.0.0-alpha.23",
     "babel-core": "^7.0.0-bridge.0",

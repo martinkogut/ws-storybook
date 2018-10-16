@@ -40,8 +40,8 @@ class Typography extends React.Component {
 }
 
 Typography.propTypes = {
-  children: PropTypes.node,
-  heading: PropTypes.string,
+  children: PropTypes.node.isRequired,
+  heading: PropTypes.string.isRequired,
   dropcaps: PropTypes.bool,
 }
 

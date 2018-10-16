@@ -3,10 +3,12 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 import { linkTo } from '@storybook/addon-links'
+import { withInfo } from '@storybook/addon-info'
 
 import Typography from './index'
 
 storiesOf('Atoms/Typography', module)
+.addDecorator((story, context) => withInfo('some info for your typo')(story)(context))
 .add('h1', () => <Typography heading="h1">This is wildstyle</Typography>)
 .add('h2', () => <Typography heading="h2">This is wildstyle</Typography>)
 .add('h3', () => <Typography heading="h3">This is wildstyle</Typography>)

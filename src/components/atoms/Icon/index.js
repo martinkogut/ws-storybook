@@ -16,10 +16,12 @@ const Icon = ({ context, className, style }) => {
 
 Icon.displayName = 'Icon';
 
-Icon.defaultProps = {}
+Icon.defaultProps = {
+  context: 'user'
+}
 
 Icon.propTypes = {
-  /** ghost, round, text, large, small, light, ghost-light, text-light */
+  /** any font awesome icon */
   context: PropTypes.string,
   className: PropTypes.string,
   style: PropTypes.object

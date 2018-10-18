@@ -1,35 +1,36 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import classNames from 'classnames'
-import styles from './button.module.scss'
-const cx = classNames.bind(styles)
-class Button extends React.Component {
-  handleClick = (e) => {
-    // e.preventDefault()
-    this.props.onClick(this.props.onClick)
-  }
-  render () {
-    let buttonStyles = cx({
-      [styles.btn]: true,
-      [styles['btn-light']]: this.props.light,
-      [styles['btn-ghost-light']]: this.props.ghost,
-      [styles['btn-round']]: this.props.round,
-      [styles['btn-text']]: this.props.text,
-      [styles['btn-text-light']]: this.props.textLight,
-      [styles['btn-large']]: this.props.large,
-      [styles['btn-small']]: this.props.small
-    })
-    return (
-      <a href={this.props.to} onClick={this.handleClick} className={buttonStyles}>{this.props.children}</a>
-    )
-  }
+import cx from 'classnames'
+
+const Button = ({ text, context, empty, className, style }) => {
+  const baseClass = 'btn'
+
+  const rootClass = cx(baseClass, className, {
+      [`${baseClass}-${context}`]: context,
+      [`${baseClass}-empty`]: empty
+  })
+
+  return (
+      <span className={rootClass} style={style}>
+          {!empty && text}
+      </span>
+  );
+}
+
+Button.displayName = 'Button';
+
+Button.defaultProps = {
+  text: '',
+  empty: false
 }
 
 Button.propTypes = {
-  children: PropTypes.node.isRequired,
-  style: PropTypes.string,
-  location: PropTypes.string,
-  onClick: PropTypes.func
+  text: PropTypes.string,
+  /** ghost, round, text, large, small, light, ghost-light, text-light */
+  context: PropTypes.string,
+  empty: PropTypes.bool,
+  className: PropTypes.string,
+  style: PropTypes.object
 }
 
 export default Button

@@ -535,11 +535,11 @@
 	transition: background .3s;
 
 	.navbar-logo {
-		content: url(../images/logo-light.png);
+		content: url(/static/assets/images/logo-light.png);
 	}
 
 	.navbar-logo-dark {
-		content: url(../images/logo.png);
+		content: url(/static/assets/images/logo.png);
 	}
 }
 

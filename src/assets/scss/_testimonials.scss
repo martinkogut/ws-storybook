@@ -6,7 +6,7 @@
 
 /* ---- 12.1 Testimonial - 1 Column Slider ---- */
 .testimonials-parallax {
-	background: url(../../../assets/images/sea-2.jpg);
+	background: url(/static/assets/images/sea-2.jpg);
 	background-size: cover;
 	background-position: 50%;
 	background-attachment: fixed;
@@ -125,7 +125,7 @@
 }
 
 .testimonials-bg-2 {
-	background: url(../../../assets/images/testimonials-bg-2.jpg);
+	background: url(/static/assets/images/testimonials-bg-2.jpg);
 	background-size: cover;
 	background-position: 50%;
 	background-attachment: fixed;
@@ -237,7 +237,7 @@
 
 /* ---- 12.3 Clients List ---- */
 .clients-list-parallax {
-	background: url(../../../assets/images/street.jpg);
+	background: url(/static/assets/images/street.jpg);
 	background-size: cover;
 	background-attachment: fixed;
 

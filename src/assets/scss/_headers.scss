@@ -135,7 +135,7 @@
 
 /* ---- 4.5 Header/Page Title Parallax ---- */
 .pt-plax-md-dark {
-	background: url(../images/pt-bg-1.jpg);
+	background: url(/static/assets/images/pt-bg-1.jpg);
 	background-size: cover;
 	background-position: 50%;
 
@@ -151,7 +151,7 @@
 }
 
 .pt-plax-md-light {
-	background: url(../images/pt-bg-2.jpg);
+	background: url(/static/assets/images/pt-bg-2.jpg);
 	background-size: cover;
 
 	&:before {
@@ -166,7 +166,7 @@
 }
 
 .pt-plax-lg-dark {
-	background: url(../images/pt-bg-3.jpg);
+	background: url(/static/assets/images/pt-bg-3.jpg);
 	background-size: cover;
 
 	&:before {
@@ -181,7 +181,7 @@
 }
 
 .pt-plax-lg-light {
-	background: url(../images/pt-bg-3.jpg);
+	background: url(/static/assets/images/pt-bg-3.jpg);
 	background-size: cover;
 
 	&:before {

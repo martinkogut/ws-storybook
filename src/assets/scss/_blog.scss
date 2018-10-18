@@ -5,13 +5,12 @@
 .blog-landing {
 	h4 {
 		color: $white;
-		@extend .pb-15;
 	}
 	.ft-cards-2 {
 		.ft-content {
 			padding-top: 0;
 			h4 {
-				color: $black;
+				color: #000000
 			}
 		}
 	}

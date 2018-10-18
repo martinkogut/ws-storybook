@@ -217,7 +217,7 @@
 		i {
 			display: inline-block;
 			color: $dark;
-			background: url(../images/pat-diagonal.png) 100% repeat;
+			background: url(/static/assets/images/pat-diagonal.png) 100% repeat;
 			border-radius: 100px;
 		}
 	} // .ft-diagonal
@@ -903,7 +903,7 @@
 	} // .ft-item
 
 	.ft-1 {
-		background: #ccc url(../../assets/images/landing-ft-4.jpg);
+		background: #ccc url(/satic/assets/images/landing-ft-4.jpg);
 		background-size: 100%;
 		background-position: 50%;
 		transition: background-size .3s;
@@ -922,7 +922,7 @@
 
 	.ft-2 {
 		@extend .ft-1;
-		background: url(../../assets/images/bridge-2.jpg);
+		background: url(/static/assets/images/bridge-2.jpg);
 		background-size: 100%;
 		background-position: 50%;
 
@@ -974,7 +974,7 @@
 
 .video-bg-section {
 	height: 365px;
-	background: #ccc url(../images/hero/edge.jpg);
+	background: #ccc url(/static/assets/images/hero/edge.jpg);
 	background-position: 50%;
 	background-size: cover;
 

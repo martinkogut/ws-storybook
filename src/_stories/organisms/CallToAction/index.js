@@ -3,25 +3,17 @@ import { text, boolean, object } from '@storybook/addon-knobs';
 import { optionalSelect } from '../../../components/utils/optionalSelect';
 
 import readme from './README.md';
-import Button from '../../../components/atoms/Button';
+import CTA from '../../../components/organisms/CallToAction';
 
 const options = {
-    'No Value': '',
-    'Ghost': 'ghost',
-    'Round': 'round',
-    'Text': 'text',
-    'Large': 'large',
-    'Small': 'small',
-    'Light': 'light',
-    'Ghost Light': 'ghost-light',
-    'Text Light': 'text-light',
+  'Link': 'link',
+  'Newsletter': 'newsletter',
 };
 
 const component = () => (
-  <Button
-    text={text('Text', 'Wildstyle')}
+  <CTA
+    text={text('Call to Action', 'Blog Post Title')}
     context={optionalSelect('Context', options, '')}
-    empty={boolean('Empty', false)}
     className={text('ClassName', '')}
     style={object('Style', {})}
   />

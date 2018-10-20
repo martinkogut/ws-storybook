@@ -4,6 +4,7 @@ import { withReadme } from 'storybook-readme';
 import { withKnobs } from '@storybook/addon-knobs';
 import { withInfo } from '@storybook/addon-info';
 
+import CTA from './CallToAction/'
 import Card from './Card/';
 
 const stories = storiesOf('Oraganisms', module);
@@ -15,4 +16,5 @@ stories
     .addDecorator((story, context) => withInfo('')(story)(context))
     .addDecorator(storyWrapper)
     .addDecorator(withKnobs)
+    .add('Call to Action', withReadme(...CTA))
     .add('Card', withReadme(...Card))

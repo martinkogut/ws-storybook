@@ -7,6 +7,7 @@ import CTA from '../../../components/organisms/CallToAction';
 
 const options = {
   'Link': 'link',
+  'Link Dark': 'link dark',
   'Newsletter': 'newsletter',
 };
 

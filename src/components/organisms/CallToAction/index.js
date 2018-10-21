@@ -16,25 +16,31 @@ const CTA = ({ text, context, className, style }) => {
       <div className="bg-overlay">
         <div className="cta-wrapper">
           <h3 className="cta-lead h-alt">{text}</h3>
-          {/*
-          <form className="mc-ajax mc-form subscribe-form">
-            <input type="email" name="EMAIL" placeholder="Your email address" id="mc-email" className="wow fadeInUp" />
-            <input type="submit" name="subscribe" value="Join Us" class="btn btn-light btn-large wow fadeInUp mc-send-btn" />
-            <label for="mc-email" className="mc-info"></label>
-            <div class="subscribe-result"></div>
-          </form>
-          */}
+          {
+            context === 'newsletter' ? <CTANewsletter /> : null
+          }
+          <Button context="light large" text="Get in Touch"></Button>
         </div>
       </div>
     </div>
   );
 }
 
+const CTANewsletter = ({}) => {
+  return(
+    <form className="mc-ajax mc-form subscribe-form">
+      <input type="email" name="EMAIL" placeholder="Your email address" id="mc-email" className="wow fadeInUp" />
+      <label for="mc-email" className="mc-info"></label>
+      <div className="subscribe-result"></div>
+    </form>
+  )
+}
+
 CTA.propTypes = {
   text: ''
 }
 
-Button.propTypes = {
+CTA.propTypes = {
   text: PropTypes.string,
   /** ghost, round, text, large, small, light, ghost-light, text-light */
   context: PropTypes.string,

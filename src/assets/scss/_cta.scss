@@ -14,8 +14,9 @@
 	}
 
 	.cta-wrapper {
-		/*padding-top: $ws-m;*/
-		padding-bottom: $ws-m;
+		padding-top: $ws-m;
+    padding-bottom: $ws-m;
+    text-align: center;
 
 		h3 {
 			@extend .mb-30;

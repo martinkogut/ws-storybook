@@ -11,9 +11,9 @@ const Button = ({ text, context, empty, className, style }) => {
   })
 
   return (
-      <span className={rootClass} style={style}>
-          {!empty && text}
-      </span>
+      <a className={rootClass} style={style}>
+        {!empty && text}
+      </a>
   );
 }
 

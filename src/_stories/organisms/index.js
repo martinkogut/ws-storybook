@@ -6,6 +6,7 @@ import { withInfo } from '@storybook/addon-info';
 
 import CTA from './CallToAction/'
 import Card from './Card/';
+import ProfileCard from './ProfileCard/';
 
 const stories = storiesOf('Oraganisms', module);
 const storyWrapper = story => {
@@ -18,3 +19,4 @@ stories
     .addDecorator(withKnobs)
     .add('Call to Action', withReadme(...CTA))
     .add('Card', withReadme(...Card))
+    .add('Profile Card', withReadme(...ProfileCard))

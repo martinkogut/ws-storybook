@@ -41,16 +41,14 @@ const Card = ({ postTitle, postText, className, style }) => {
 Card.displayName = 'Card';
 
 Card.defaultProps = {
-  postTitle: 'Blog Post Title',
-  postText: 'Lorem ipsum dolor sit amet, tempor consectetur adipisicing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua. Ut enim ad ...'
+  className: ''
 }
 
 Card.propTypes = {
   postText: PropTypes.string,
   postTitle: PropTypes.string,
   /** any font awesome icon */
-  className: PropTypes.string,
-  style: PropTypes.object
+  className: PropTypes.string
 }
 
 export default Card

@@ -13,7 +13,6 @@ const component = () => (
     postTitle={text('Post Title', 'Blog Post Title')}
     postText={text('Post Text', 'Lorem ipsum dolor sit amet, tempor consectetur adipisicing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua. Ut enim ad ...')}
     className={text('ClassName', '')}
-    style={object('Style', {})}
   />
 );
 

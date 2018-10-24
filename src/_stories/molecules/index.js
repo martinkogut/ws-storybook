@@ -5,6 +5,7 @@ import { withKnobs } from '@storybook/addon-knobs';
 import { withInfo } from '@storybook/addon-info';
 
 import Tag from './Tag/'
+import ProgressBar from './ProgressBar/'
 
 const stories = storiesOf('Molecules', module);
 const storyWrapper = story => {
@@ -16,3 +17,4 @@ stories
     .addDecorator(storyWrapper)
     .addDecorator(withKnobs)
     .add('Tag', withReadme(...Tag))
+    .add('ProgressBar', withReadme(...ProgressBar))

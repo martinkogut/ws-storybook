@@ -6,6 +6,7 @@ import { withInfo } from '@storybook/addon-info';
 
 import Button from './Button/';
 import Icon from './Icon/'
+import Image from './Image/';
 import Typography from './Typography/'
 
 const stories = storiesOf('Atoms', module);
@@ -19,4 +20,5 @@ stories
     .addDecorator(withKnobs)
     .add('Button', withReadme(...Button))
     .add('Icon', withReadme(...Icon))
+    .add('Image', withReadme(...Image))
     .add('Typography', withReadme(...Typography))

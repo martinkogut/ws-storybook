@@ -1,21 +1,19 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import cx from 'classnames'
 
-class Image extends React.Component {
-  handleClick = (e) => {
-    // e.preventDefault()
-    this.props.onClick(this.props.onClick)
-  }
-  render () {
-    return (
-      <img src={this.props.src} alt={this.props.alt} />
-    )
-  }
+const Image = ({ src, alt }) => {
+
+  return (
+    <img className="img-responsive" src={src} alt={alt} />
+  );
 }
 
+
+
 Image.propTypes = {
-  alt: PropTypes.string,
-  src: PropTypes.string
+  src: PropTypes.string.isRequired,
+  alt: PropTypes.string.isRequired
 }
 
 export default Image

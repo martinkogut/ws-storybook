@@ -13,7 +13,6 @@ const component = () => (
     name={text('Name', 'Jonathan Webb')}
     position={text('Position', 'Fullstack Developer')}
     className={text('ClassName', '')}
-    style={object('Style', {})}
   />
 );
 

@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import cx from 'classnames'
 
+import Image from '../../atoms/Image'
+
 const ProfileCard = ({ name, position, className, style }) => {
 
   const baseClass = 'team-3col'
@@ -12,7 +14,7 @@ const ProfileCard = ({ name, position, className, style }) => {
     <div className={rootClass}>
       <div className="t-item">
         <div className="t-image">
-          <img src="http://themes.89elements.com/definity-html/assets/images/team-1.jpg" alt="Team Member" className="img-responsive" />
+          <Image src="http://themes.89elements.com/definity-html/assets/images/team-1.jpg" alt="Team Member" />
         </div>
         <div className="t-info">
           <h4 className="t-name">{name}</h4>
@@ -32,15 +34,13 @@ const ProfileCard = ({ name, position, className, style }) => {
 ProfileCard.displayName = 'ProfileCard';
 
 ProfileCard.defaultProps = {
-  name: 'Jonathan Webb',
-  position: 'Fullstack Developer'
+  className: ''
 }
 
 ProfileCard.propTypes = {
   name: PropTypes.string.isRequired,
   position: PropTypes.string.isRequired,
-  className: PropTypes.string,
-  style: PropTypes.object
+  className: PropTypes.string
 }
 
 export default ProfileCard

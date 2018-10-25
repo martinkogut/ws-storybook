@@ -12,7 +12,7 @@ const ProgressBar = ({ percent, text, context, className }) => {
 
   return (
     <div className={baseClass}>
-      <div className={`progress ${context ? 'progress-thin' : null}`}>
+      <div className={`progress ${context === 'thin' ? 'progress-thin' : ''}`}>
         <div className="progress-bar" role="progressbar" aria-valuenow={percent} aria-valuemin="0" aria-valuemax="100" style={{width: percent+'%'}}>
           <span className="sr-only">{percent}% Complete</span>
         </div>

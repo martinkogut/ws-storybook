@@ -6,7 +6,7 @@ import readme from './README.md';
 import ProgressBar from '../../../components/molecules/ProgressBar';
 
 const options = {
-  'Default': null,
+  'Default': '',
   'Thin': 'thin'
 };
 

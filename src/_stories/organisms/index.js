@@ -8,6 +8,7 @@ import CTA from './CallToAction/'
 import Card from './Card/';
 import ProfileCard from './ProfileCard/';
 import NavigationBar from './NavigationBar/';
+import Footer from './Footer/';
 
 const stories = storiesOf('Oraganisms', module);
 const storyWrapper = story => {
@@ -22,3 +23,4 @@ stories
     .add('Card', withReadme(...Card))
     .add('Profile Card', withReadme(...ProfileCard))
     .add('Navigation Bar', withReadme(...NavigationBar))
+    .add('Footer', withReadme(...Footer))

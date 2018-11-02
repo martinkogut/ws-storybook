@@ -29,3 +29,14 @@ td,
 tr {
   border: none;
 }
+
+pre {
+  display: block;
+  padding: 20px;
+  line-height: 1.6;
+  overflow-x: auto;
+  white-space: pre;
+  color: #c5c8c6;
+  background-color: #1d1f21;
+  font-size: 20px;
+}

@@ -6,10 +6,13 @@ import readme from './README.md';
 import NavigationBar from '../../../components/organisms/NavigationBar';
 
 const options = {
+  'Default': '',
+  'Inverse': 'inverse'
 };
 
 const component = () => (
-  <NavigationBar />
+  <NavigationBar
+    context={optionalSelect('Context', options, '')} />
 );
 
 export default [readme, component];

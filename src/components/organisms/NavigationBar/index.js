@@ -4,14 +4,20 @@ import cx from 'classnames'
 
 import logo from '../../../assets/images/logo.png'
 
-const NavigationBar = ({ name, position, className, style }) => {
+const NavigationBar = ({ context, className }) => {
 
-  const baseClass = 'team-3col'
+  const baseClass = 'navbar'
 
-  const rootClass = cx(baseClass)
+  const rootClass = cx(baseClass, className, {
+      [`${baseClass}-${context}`]: context,
+      [`${baseClass}-default`]: true,
+      [`${baseClass}-static-top`]: true,
+      [`mega`]: true,
+      [`mobile-nav`]: true
+  })
 
   return (
-    <nav className="navbar navbar-default navbar-static-top mega mobile-nav">
+    <nav className={rootClass}>
           <div className="container">
             <div className="navbar-header">
               <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -337,6 +343,8 @@ NavigationBar.defaultProps = {
 }
 
 NavigationBar.propTypes = {
+  /** inverse */
+  context: PropTypes.string
 }
 
 export default NavigationBar

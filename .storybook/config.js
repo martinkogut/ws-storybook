@@ -2,6 +2,10 @@ import { configure, setAddon } from '@storybook/react'
 import infoAddon, { setDefaults } from '@storybook/addon-info'
 import { setOptions } from '@storybook/addon-options'
 
+import jquery from 'jquery';
+global.$ = jquery;
+global.jQuery = jquery;
+
 import './index.css'
 import '../src/assets/scss/base.scss'
 import '.../../font-awesome/css/font-awesome.css'
@@ -22,12 +26,12 @@ setDefaults({
   header: false,
   source: true,
   styles: stylesheet => {
-      stylesheet.infoBody = {
-          infoBody: {
-              padding: '10px'
-          }
-      };
-      return stylesheet;
+    stylesheet.infoBody = {
+      infoBody: {
+        padding: '10px'
+      }
+    }
+  return stylesheet
   },
   maxPropsIntoLine: 1
   // propTablesExclude: [ReadmeContainer, DefaultPreview]

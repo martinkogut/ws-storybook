@@ -22,6 +22,12 @@ module.exports = {
         use: [
           'file-loader?name=images/[name].[ext]'
         ]
+      },
+      {
+        test: /\.jsx?$/,
+        include: path.resolve('./src/_stories'),
+        loaders: [require.resolve('@storybook/addon-storysource/loader')],
+        enforce: 'pre',
       }
     ]
   }

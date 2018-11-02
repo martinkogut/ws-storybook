@@ -5,6 +5,7 @@ import { setOptions } from '@storybook/addon-options'
 import jquery from 'jquery';
 global.$ = jquery;
 global.jQuery = jquery;
+require('bootstrap-sass')
 
 import './index.css'
 import '../src/assets/scss/base.scss'

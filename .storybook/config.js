@@ -28,9 +28,22 @@ setDefaults({
   source: true,
   styles: stylesheet => {
     stylesheet.infoBody = {
-      infoBody: {
-        padding: '10px'
-      }
+      border: '0',
+    },
+    stylesheet.infoStory = {
+      textAlign: 'center',
+      marginTop: '5rem',
+      marginBottom: '5rem'
+    },
+    stylesheet.source = {
+      h1: {
+        margin: '20px 0 0 0',
+        padding: '0 0 50px 0',
+        fontSize: '25px',
+        borderBottom: '1px solid #000',
+      },
+    },
+    stylesheet.propTableHead = {
     }
   return stylesheet
   },

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import './App.css';
+import './App.scss';
 import Button from '../src/components/atoms/Button'
 
 class App extends Component {
@@ -11,7 +11,7 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <p>
             Edit <code>src/App.js</code> and save to reload.
-            <Button />
+            <Button context="light" text="Wildstyle" />
           </p>
           <a
             className="App-link"

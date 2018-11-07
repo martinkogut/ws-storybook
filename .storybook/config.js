@@ -7,7 +7,7 @@ global.$ = jquery;
 global.jQuery = jquery;
 require('bootstrap-sass')
 
-import './index.css'
+// import './index.css'
 import '../src/assets/scss/base.scss'
 import '.../../font-awesome/css/font-awesome.css'
 

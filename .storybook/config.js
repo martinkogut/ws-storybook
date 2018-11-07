@@ -30,7 +30,6 @@ setDefaults({
       border: '0',
     },
     stylesheet.infoStory = {
-      textAlign: 'center',
       marginTop: '5rem',
       marginBottom: '5rem'
     },

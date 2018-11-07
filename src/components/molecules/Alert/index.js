@@ -12,7 +12,7 @@ const Alert = ({ type, text, title, context, className }) => {
 
   return (
     <div className={rootClass} role="alert">
-      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+      <button type="button" className="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
       <strong>{title}</strong> {text}
     </div>
   );

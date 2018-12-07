@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import cx from 'classnames'
 
 import Image from '../../atoms/Image'
+import Icon from '../../atoms/Icon'
 
 const ProfileCard = ({ name, position, className, style }) => {
 
@@ -23,6 +24,7 @@ const ProfileCard = ({ name, position, className, style }) => {
                 <h4 className="t-name">{name}</h4>
                 <span className="t-role">{position}</span>
                 <ul className="social-links">
+                  {/*<li><a href="#"><Icon context="user" /></a></li>*/}
                   <li><a href="#"><i className="fa fa-facebook"></i></a></li>
                   <li><a href="#"><i className="fa fa-twitter"></i></a></li>
                   <li><a href="#"><i className="fa fa-linkedin"></i></a></li>

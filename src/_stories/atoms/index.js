@@ -14,7 +14,7 @@ const storyWrapper = story => {
     return <div style={{ margin: '35px' }}>{story()}</div>;
 };
 
-const projectA = storiesOf('Atoms/ProjectA', module);
+// const projectA = storiesOf('Atoms/ProjectA', module);
 
 stories
     .addDecorator((story, context) => withInfo('')(story)(context))
@@ -24,9 +24,10 @@ stories
     .add('Icon', withReadme(...Icon))
     .add('Image', withReadme(...Image))
     .add('Typography', withReadme(...Typography))
-
+/*
 projectA
 .addDecorator((story, context) => withInfo('')(story)(context))
 .addDecorator(storyWrapper)
 .addDecorator(withKnobs)
 .add('Button', withReadme(...Button))
+*/

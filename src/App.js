@@ -12,7 +12,7 @@ class App extends Component {
           <p>
             Edit <code>src/App.js</code> and save to reload.
             <br />
-            <Button context="light" text="Wildstyle" />
+            <Button context="light" text="Lorem ipsum" />
           </p>
           <a
             className="App-link"

@@ -24,7 +24,7 @@ const ProfileCard = ({ name, position, className, style }) => {
                 <h4 className="t-name">{name}</h4>
                 <span className="t-role">{position}</span>
                 <ul className="social-links">
-                  {/*<li><a href="#"><Icon context="user" /></a></li>*/}
+                  <li><a href="#"><Icon context="facebook" /></a></li>
                   <li><a href="#"><i className="fa fa-facebook"></i></a></li>
                   <li><a href="#"><i className="fa fa-twitter"></i></a></li>
                   <li><a href="#"><i className="fa fa-linkedin"></i></a></li>
